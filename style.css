@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fcfcfc;
+    color: #333;
+}
+
+header {
+    background-color: #acddb8; /* Verde para remeter ao campo */
+    color: #7c0a0a;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1, h2 {
+    color: ssss#157512; /* Azul para remeter à cidade */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.conexao-introducao, .conexao-conclusao {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+.conexao-item {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #1c9b46;
+    padding-bottom: 30px;
+}
+
+.conexao-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.conteudo-com-imagem {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+    align-items: center;
+    gap: 20px; /* Espaço entre imagem e texto */
+}
+
+.conteudo-com-imagem img {
+    max-width: 400px; /* Largura máxima da imagem */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(143, 37, 37, 0.1);
+    flex-shrink: 0; /* Evita que a imagem encolha muito */
+}
+
+.conteudo-com-imagem p {
+    flex: 1; /* Permite que o texto ocupe o espaço restante */
+    min-width: 300px; /* Largura mínima para o parágrafo antes de quebrar */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 30px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 0 0 8px 8px;
+}
+
+/* Responsividade básica */
+@media (max-width: 768px) {
+    .conteudo-com-imagem {
+        flex-direction: column; /* Coloca imagem e texto em colunas */
+        text-align: center;
+    }
+
+    .conteudo-com-imagem img {
+        max-width: 100%; /* Imagem ocupa toda a largura disponível */
+    }
+}
